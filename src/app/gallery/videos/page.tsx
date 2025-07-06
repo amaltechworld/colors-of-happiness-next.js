@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 import Footer from "../../Components/Footer/Footer";
@@ -40,10 +41,23 @@ const VideoGallery = () => {
             color: "border-purple-500",
         },
     ];
-
+ 
     return (
         <div>
-            <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+            {/* Logo at Top Left */}
+            <div className="absolute top-4 left-4 z-30">
+                <Link href="/" aria-label="Go to Colors Of Happiness homepage">
+                    <Image
+                        src="/hero/COH-logo.png"
+                        alt="Colors Of Happiness Wedding Photography Logo"
+                        width={80}
+                        height={40}
+                        className="object-contain"
+                        priority
+                    />
+                </Link>
+            </div>
+            <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 pt-20 md:pt-24">
                 <div className="max-w-7xl mx-auto">
                     {/* Header */}
                     <div className="text-center mb-12">

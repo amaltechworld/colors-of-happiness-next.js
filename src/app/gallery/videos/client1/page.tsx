@@ -68,9 +68,9 @@ const Client1Videos = () => {
                 }}
             />
 
-            <div className="min-h-screen bg-gray-50">
+            <div className="min-h-screen bg-gray-50 pt-20 md:pt-24">
                 {/* Header */}
-                <div className="bg-white shadow-sm">
+                <div className="">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                         <div className="text-center">
                             <h1 className="text-4xl font-bold text-gray-900 mb-4">
@@ -79,7 +79,7 @@ const Client1Videos = () => {
                             <p className="text-xl text-gray-600 mb-6">
                                 Wedding Video Collection
                             </p>
-                            <div className="w-24 h-1 bg-red-500 mx-auto"></div>
+                            <div className="w-24 h-1 bg-[#561c24] mx-auto"></div>
                         </div>
                     </div>
                 </div>
@@ -92,7 +92,6 @@ const Client1Videos = () => {
                                 key={index}
                                 videoId={video.id}
                                 title={video.title}
-                                className="border-4 border-red-500"
                             />
                         ))}
                     </div>
