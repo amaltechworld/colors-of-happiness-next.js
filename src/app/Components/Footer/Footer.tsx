@@ -8,7 +8,7 @@ const Footer = () => {
         <footer className="footer bg-[#561C24] text-[#E8D8C4] p-10 lg:snap-start flex flex-col items-start md:flex-row md:justify-between md:items-start">
             {/* Left: Logo and Company Name */}
             <aside className="flex flex-col items-start mb-6 md:mb-0 pl-4">
-                <Link href="#hero">
+                <Link href="/">
                     <Image
                         src="/footer/coh-white-logo.png"
                         alt="footer-logo of colors of happiness"

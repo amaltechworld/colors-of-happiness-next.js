@@ -1,0 +1,47 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Sree & Prabhul Wedding Gallery",
+    description:
+        "Explore the beautiful wedding gallery of Sree & Prabhul captured by Colors Of Happiness. Professional wedding photography showcasing love, emotions, and precious moments.",
+    keywords: [
+        "Sree Prabhul wedding",
+        "wedding gallery",
+        "Colors Of Happiness",
+        "wedding photography",
+        "Indian wedding",
+        "professional photographer",
+    ],
+    openGraph: {
+        title: "Sree & Prabhul Wedding Gallery | Colors Of Happiness",
+        description:
+            "Beautiful wedding gallery of Sree & Prabhul captured by Colors Of Happiness professional photographers.",
+        images: [
+            {
+                url: "/gallery/clients/client1/image1.jpg",
+                width: 1200,
+                height: 800,
+                alt: "Sree & Prabhul Wedding Photography",
+            },
+        ],
+        url: "https://colorsofhappiness.com/gallery/clients/client1",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Sree & Prabhul Wedding Gallery",
+        description:
+            "Beautiful wedding gallery captured by Colors Of Happiness.",
+        images: ["/gallery/clients/client1/image1.jpg"],
+    },
+    alternates: {
+        canonical: "https://colorsofhappiness.com/gallery/clients/client1",
+    },
+};
+
+export default function Client1Layout({
+    children,
+}: {
+    children: React.ReactNode;
+}) {
+    return <>{children}</>;
+}

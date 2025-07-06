@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,7 +10,7 @@ const ImageVideo = () => {
             <div className="flex flex-col md:flex-row w-full h-[80vh] mx-0 px-0">
                 {/* Left: Image Gallery */}
                 <Link
-                    href="/gallery/images"
+                    href="/gallery"
                     className="group relative w-full md:w-1/2 h-1/2 md:h-full overflow-hidden"
                 >
                     <Image
@@ -19,7 +21,7 @@ const ImageVideo = () => {
                         priority
                     />
                     {/* Overlay */}
-                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition duration-500" />
+                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/20 transition duration-500" />
                     {/* Text & Underline */}
                     <div className="absolute left-0 bottom-0 p-8 flex flex-col items-start">
                         <span className="text-white text-2xl font-semibold mb-2 tracking-widest">
