@@ -22,7 +22,7 @@ export default function Client4Gallery() {
             <section className="w-full py-14 pt-20">
                 <div className="container mx-auto max-w-[1200px] bg-white p-6 md:p-12 lg:p-16">
                     <h1 className="text-6xl text-gray-700 font-light text-center p-5">
-                        Rohan <br /> Sree <br /> & <br /> Prabhul <br /> Kavya
+                        Kiran <br />  & <br /> Lekshmi
                     </h1>
 
                     <p className="text-gray-600 text-center p-5">

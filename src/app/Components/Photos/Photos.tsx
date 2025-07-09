@@ -2,17 +2,17 @@ import React from "react";
 import Image from "next/image";
 
 const topImages = [
-    { src: "/photos/photo-img1.jpeg", alt: "Quates-wedding-img-top-1" },
-    { src: "/photos/photo-img2.jpeg", alt: "Quates-wedding-img-top-2" },
-    { src: "/photos/photo-img3.jpeg", alt: "Quates-wedding-img-top-3" },
-    { src: "/photos/photo-img4.jpeg", alt: "Quates-wedding-img-top-4" },
+    { src: "/photos/photo-img1.jpg", alt: "Quates-wedding-img-top-1" },
+    { src: "/photos/photo-img2.jpg", alt: "Quates-wedding-img-top-2" },
+    { src: "/photos/photo-img3.jpg", alt: "Quates-wedding-img-top-3" },
+    { src: "/photos/photo-img4.jpg", alt: "Quates-wedding-img-top-4" },
 ];
 
 const bottomImages = [
-    { src: "/photos/photo-img5.jpeg", alt: "Quates-wedding-img-bottom-1" },
-    { src: "/photos/photo-img6.jpeg", alt: "Quates-wedding-img-bottom-2" },
-    { src: "/photos/photo-img7.jpeg", alt: "Quates-wedding-img-bottom-3" },
-    { src: "/photos/photo-img8.jpeg", alt: "Quates-wedding-img-bottom-4" },
+    { src: "/photos/photo-img5.jpg", alt: "Quates-wedding-img-bottom-1" },
+    { src: "/photos/photo-img6.jpg", alt: "Quates-wedding-img-bottom-2" },
+    { src: "/photos/photo-img7.jpg", alt: "Quates-wedding-img-bottom-3" },
+    { src: "/photos/photo-img8.jpg", alt: "Quates-wedding-img-bottom-4" },
 ];
 
 const Photos = () => {

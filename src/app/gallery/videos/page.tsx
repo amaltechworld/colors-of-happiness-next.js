@@ -23,25 +23,21 @@ const VideoGallery = () => {
         {
             id: "client1",
             names: "Arjun & Priya",
-            color: "border-red-500",
         },
         {
             id: "client2",
             names: "Vikram & Anjali",
-            color: "border-blue-500",
         },
         {
             id: "client3",
-            names: "Raj & Meera",
-            color: "border-green-500",
+            names: "Amal & Meera",
         },
         {
             id: "client4",
             names: "Rohan & Kavya",
-            color: "border-purple-500",
         },
     ];
- 
+
     return (
         <div>
             {/* Logo at Top Left */}
@@ -76,7 +72,7 @@ const VideoGallery = () => {
                             <Link
                                 key={client.id}
                                 href={`/gallery/videos/${client.id}`}
-                                className={`group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 ${client.color} border-4`}
+                                className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                             >
                                 <div className="aspect-video bg-gray-200 flex items-center justify-center">
                                     <div className="text-center">

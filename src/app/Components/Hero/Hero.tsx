@@ -24,7 +24,7 @@ const Hero = () => {
                 <div className="md:w-1/2 w-full flex justify-center mb-8 md:mb-0">
                     <div className="relative w-[340px] h-[480px] md:w-[600px] lg:w-[700px] md:h-[100vh]">
                         <Image
-                            src="/hero/hero-couple.png"
+                            src="/hero/hero-couple.jpg"
                             alt="Couple"
                             fill
                             className="object-contain md:object-bottom"

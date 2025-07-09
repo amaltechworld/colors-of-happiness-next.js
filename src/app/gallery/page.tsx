@@ -10,25 +10,25 @@ export default function GalleryPage() {
         {
             id: "client1",
             name: "Sree & Prabhul",
-            coverImage: "/gallery/clients/client1-cover.jpg",
+            coverImage: "/gallery/client1-cover.jpg",
             href: "/gallery/clients/client1",
         },
         {
             id: "client2",
             name: "Arjun & Meera",
-            coverImage: "/gallery/clients/client2-cover.jpg",
+            coverImage: "/gallery/client2-cover.jpg",
             href: "/gallery/clients/client2",
         },
         {
             id: "client3",
-            name: "Raj & Priya",
-            coverImage: "/gallery/clients/client3-cover.jpg",
+            name: "Amal & Priya",
+            coverImage: "/gallery/client3-cover.jpg",
             href: "/gallery/clients/client3",
         },
         {
             id: "client4",
             name: "Kiran & Lakshmi",
-            coverImage: "/gallery/clients/client4-cover.jpg",
+            coverImage: "/gallery/client4-cover.jpg",
             href: "/gallery/clients/client4",
         },
     ];
@@ -44,6 +44,7 @@ export default function GalleryPage() {
                         width={80}
                         height={40}
                         className="object-contain"
+                        style={{ width: "auto", height: "auto" }}
                     />
                 </Link>
             </div>
@@ -72,8 +73,9 @@ export default function GalleryPage() {
                                         width={800}
                                         height={600}
                                         className="w-full h-[400px] object-cover object-center cursor-pointer transition-transform duration-500 group-hover:scale-110"
+                                        priority
                                     />
-                                    <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-60 transition-all duration-500" />
+                                    <div className="absolute inset-0 bg-black opacity-10 group-hover:bg-opacity-60 transition-all duration-500" />
                                     <div className="absolute inset-0 flex items-center justify-center text-white p-4">
                                         <div className="text-center">
                                             <h3 className="text-3xl md:text-5xl font-semibold mb-2">

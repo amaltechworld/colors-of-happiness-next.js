@@ -14,7 +14,7 @@ const ImageVideo = () => {
                     className="group relative w-full md:w-1/2 h-1/2 md:h-full overflow-hidden"
                 >
                     <Image
-                        src="/imageVideo/image.jpeg"
+                        src="/imageVideo/image.jpg"
                         alt="Image Gallery"
                         fill
                         className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
@@ -39,7 +39,7 @@ const ImageVideo = () => {
                     className="group relative w-full md:w-1/2 h-1/2 md:h-full overflow-hidden"
                 >
                     <Image
-                        src="/imageVideo/video.jpeg"
+                        src="/imageVideo/video.jpg"
                         alt="Video Gallery"
                         fill
                         className="object-cover object-center transition-transform duration-500 group-hover:scale-110"

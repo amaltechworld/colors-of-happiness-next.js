@@ -15,6 +15,7 @@ const Footer = () => {
                         className="h-10 lg:h-12 hover:cursor-pointer"
                         width={96}
                         height={56}
+                        style={{ width: "auto", height: "auto" }}
                     />
                 </Link>
                 <p className="mt-4 text-left">

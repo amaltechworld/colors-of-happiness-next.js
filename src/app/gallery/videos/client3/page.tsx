@@ -9,19 +9,19 @@ const Client3Videos = () => {
     const videos = [
         {
             id: "dQw4w9WgXcQ", // Replace with actual video ID
-            title: "Raj & Meera - Wedding Ceremony",
+            title: "Amal & Meera - Wedding Ceremony",
         },
         {
             id: "dQw4w9WgXcQ", // Replace with actual video ID
-            title: "Raj & Meera - Reception Highlights",
+            title: "Amal & Meera - Reception Highlights",
         },
         {
             id: "dQw4w9WgXcQ", // Replace with actual video ID
-            title: "Raj & Meera - Pre-Wedding Shoot",
+            title: "Amal & Meera - Pre-Wedding Shoot",
         },
         {
             id: "dQw4w9WgXcQ", // Replace with actual video ID
-            title: "Raj & Meera - Couple Portrait",
+            title: "Amal & Meera - Couple Portrait",
         },
     ];
 
@@ -29,9 +29,9 @@ const Client3Videos = () => {
     const structuredData = {
         "@context": "https://schema.org",
         "@type": "VideoGallery",
-        name: "Raj & Meera Wedding Videos",
+        name: "Amal & Meera Wedding Videos",
         description:
-            "Beautiful wedding video collection of Raj & Meera captured by Colors Of Happiness",
+            "Beautiful wedding video collection of Amal & Meera captured by Colors Of Happiness",
         url: "https://colorsofhappiness.com/gallery/videos/client3",
         creator: {
             "@type": "Organization",
@@ -74,7 +74,7 @@ const Client3Videos = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                     <div className="text-center">
                         <h1 className="text-4xl font-bold text-gray-900 mb-4">
-                            Raj & Meera
+                            Amal & Meera
                         </h1>
                         <p className="text-xl text-gray-600 mb-6">
                             Wedding Video Collection
