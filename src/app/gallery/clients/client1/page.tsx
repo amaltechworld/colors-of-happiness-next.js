@@ -101,7 +101,7 @@ export default function Client1Gallery() {
 
                     {/* Image-1 [full size] */}
                     <div className="h-[75vh] md:h-[100vh] lg:h-[150vh] p-2 md:p-3 lg:p-5 overflow-hidden">
-                        <div className="w-full h-full p-5 bg-gray-200 border-4 flex items-center justify-center relative">
+                        <div className="w-full h-full p-5 bg-gray-200 flex items-center justify-center relative">
                             <Image
                                 src={getImagePath(1)}
                                 alt="Image 1"

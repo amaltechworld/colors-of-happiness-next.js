@@ -18,38 +18,42 @@ export default function ContactPage() {
     });
 
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+    const [submitStatus, setSubmitStatus] = useState<
+        "idle" | "success" | "error"
+    >("idle");
 
-    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const handleInputChange = (
+        e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    ) => {
         const { name, value } = e.target;
-        setFormData(prev => ({
+        setFormData((prev) => ({
             ...prev,
-            [name]: value
+            [name]: value,
         }));
     };
 
     const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { value, checked } = e.target;
-        setFormData(prev => ({
+        setFormData((prev) => ({
             ...prev,
-            services: checked 
+            services: checked
                 ? [...prev.services, value]
-                : prev.services.filter(service => service !== value)
+                : prev.services.filter((service) => service !== value),
         }));
     };
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
-        
+
         try {
             // Here you would typically send the form data to your backend
-            console.log('Form submitted:', formData);
-            
+            console.log("Form submitted:", formData);
+
             // Simulate API call
-            await new Promise(resolve => setTimeout(resolve, 2000));
-            
-            setSubmitStatus('success');
+            await new Promise((resolve) => setTimeout(resolve, 2000));
+
+            setSubmitStatus("success");
             // Reset form after successful submission
             setFormData({
                 name: "",
@@ -62,8 +66,8 @@ export default function ContactPage() {
                 services: [],
             });
         } catch (error) {
-            console.error('Form submission error:', error);
-            setSubmitStatus('error');
+            console.error("Form submission error:", error);
+            setSubmitStatus("error");
         } finally {
             setIsSubmitting(false);
         }
@@ -79,7 +83,8 @@ export default function ContactPage() {
                         "@context": "https://schema.org",
                         "@type": "ContactPage",
                         name: "Contact Colors Of Happiness - Wedding Photography",
-                        description: "Get in touch with Colors Of Happiness for your wedding photography and videography needs. Book your dream wedding coverage today.",
+                        description:
+                            "Get in touch with Colors Of Happiness for your wedding photography and videography needs. Book your dream wedding coverage today.",
                         provider: {
                             "@type": "Organization",
                             name: "Colors Of Happiness",
@@ -118,7 +123,8 @@ export default function ContactPage() {
                             </span>
                         </h1>
                         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                            Tell us about your special day and let&apos;s create something magical together
+                            Tell us about your special day and let&apos;s create
+                            something magical together
                         </p>
                     </div>
 
@@ -128,8 +134,12 @@ export default function ContactPage() {
                             {/* Row 1: Name and Email */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
-                                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                                        Name <span className="text-red-500">*</span>
+                                    <label
+                                        htmlFor="name"
+                                        className="block text-sm font-medium text-gray-700 mb-2"
+                                    >
+                                        Name{" "}
+                                        <span className="text-red-500">*</span>
                                     </label>
                                     <input
                                         type="text"
@@ -143,8 +153,12 @@ export default function ContactPage() {
                                     />
                                 </div>
                                 <div>
-                                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                                        Email <span className="text-red-500">*</span>
+                                    <label
+                                        htmlFor="email"
+                                        className="block text-sm font-medium text-gray-700 mb-2"
+                                    >
+                                        Email{" "}
+                                        <span className="text-red-500">*</span>
                                     </label>
                                     <input
                                         type="email"
@@ -162,8 +176,12 @@ export default function ContactPage() {
                             {/* Row 2: Phone and Guest Count */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
-                                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                                        Phone <span className="text-red-500">*</span>
+                                    <label
+                                        htmlFor="phone"
+                                        className="block text-sm font-medium text-gray-700 mb-2"
+                                    >
+                                        Phone{" "}
+                                        <span className="text-red-500">*</span>
                                     </label>
                                     <input
                                         type="tel"
@@ -177,8 +195,12 @@ export default function ContactPage() {
                                     />
                                 </div>
                                 <div>
-                                    <label htmlFor="guestCount" className="block text-sm font-medium text-gray-700 mb-2">
-                                        Estimated Guest Count <span className="text-red-500">*</span>
+                                    <label
+                                        htmlFor="guestCount"
+                                        className="block text-sm font-medium text-gray-700 mb-2"
+                                    >
+                                        Estimated Guest Count{" "}
+                                        <span className="text-red-500">*</span>
                                     </label>
                                     <input
                                         type="number"
@@ -197,8 +219,12 @@ export default function ContactPage() {
                             {/* Row 3: Location and Date */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
-                                    <label htmlFor="location" className="block text-sm font-medium text-gray-700 mb-2">
-                                        Wedding Location <span className="text-red-500">*</span>
+                                    <label
+                                        htmlFor="location"
+                                        className="block text-sm font-medium text-gray-700 mb-2"
+                                    >
+                                        Wedding Location{" "}
+                                        <span className="text-red-500">*</span>
                                     </label>
                                     <input
                                         type="text"
@@ -212,8 +238,12 @@ export default function ContactPage() {
                                     />
                                 </div>
                                 <div>
-                                    <label htmlFor="dates" className="block text-sm font-medium text-gray-700 mb-2">
-                                        Wedding Date <span className="text-red-500">*</span>
+                                    <label
+                                        htmlFor="dates"
+                                        className="block text-sm font-medium text-gray-700 mb-2"
+                                    >
+                                        Wedding Date{" "}
+                                        <span className="text-red-500">*</span>
                                     </label>
                                     <input
                                         type="date"
@@ -233,17 +263,28 @@ export default function ContactPage() {
                                     What services are you looking for?
                                 </label>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                                    {['Photography', 'Films', 'Both Photography and Films'].map((service) => (
-                                        <label key={service} className="flex items-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                    {[
+                                        "Photography",
+                                        "Films",
+                                        "Both Photography and Films",
+                                    ].map((service) => (
+                                        <label
+                                            key={service}
+                                            className="flex items-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer transition-all duration-200"
+                                        >
                                             <input
                                                 type="checkbox"
                                                 name="services"
                                                 value={service}
-                                                checked={formData.services.includes(service)}
+                                                checked={formData.services.includes(
+                                                    service
+                                                )}
                                                 onChange={handleCheckboxChange}
                                                 className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
                                             />
-                                            <span className="ml-3 text-sm text-gray-700">{service}</span>
+                                            <span className="ml-3 text-sm text-gray-700">
+                                                {service}
+                                            </span>
                                         </label>
                                     ))}
                                 </div>
@@ -251,8 +292,12 @@ export default function ContactPage() {
 
                             {/* Details Section */}
                             <div>
-                                <label htmlFor="details" className="block text-sm font-medium text-gray-700 mb-2">
-                                    Tell us more about your wedding <span className="text-red-500">*</span>
+                                <label
+                                    htmlFor="details"
+                                    className="block text-sm font-medium text-gray-700 mb-2"
+                                >
+                                    Tell us more about your wedding{" "}
+                                    <span className="text-red-500">*</span>
                                 </label>
                                 <textarea
                                     id="details"
@@ -267,15 +312,18 @@ export default function ContactPage() {
                             </div>
 
                             {/* Status Messages */}
-                            {submitStatus === 'success' && (
+                            {submitStatus === "success" && (
                                 <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg">
-                                    ✅ Thank you! Your message has been sent successfully. We&apos;ll get back to you soon!
+                                    ✅ Thank you! Your message has been sent
+                                    successfully. We&apos;ll get back to you
+                                    soon!
                                 </div>
                             )}
-                            
-                            {submitStatus === 'error' && (
+
+                            {submitStatus === "error" && (
                                 <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg">
-                                    ❌ Something went wrong. Please try again or contact us directly.
+                                    ❌ Something went wrong. Please try again or
+                                    contact us directly.
                                 </div>
                             )}
 
@@ -292,7 +340,7 @@ export default function ContactPage() {
                                             Sending...
                                         </div>
                                     ) : (
-                                        'Send Message & Book Consultation'
+                                        "Send Message & Book Consultation"
                                     )}
                                 </button>
                             </div>
@@ -300,12 +348,20 @@ export default function ContactPage() {
 
                         {/* Contact Info */}
                         <div className="mt-8 pt-8 border-t border-gray-200 text-center">
-                            <p className="text-gray-600 mb-2">Prefer to contact us directly?</p>
+                            <p className="text-gray-600 mb-2">
+                                Prefer to contact us directly?
+                            </p>
                             <div className="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-6">
-                                <a href="tel:+919745713419" className="text-blue-600 hover:text-blue-800 transition-colors">
+                                <a
+                                    href="tel:+919745713419"
+                                    className="text-blue-600 hover:text-blue-800 transition-colors"
+                                >
                                     📞 +91 97457 13419
                                 </a>
-                                <a href="mailto:Hello@colorsofhappiness.com" className="text-blue-600 hover:text-blue-800 transition-colors">
+                                <a
+                                    href="mailto:Hello@colorsofhappiness.com"
+                                    className="text-blue-600 hover:text-blue-800 transition-colors"
+                                >
                                     ✉️ Hello@colorsofhappiness.com
                                 </a>
                             </div>
