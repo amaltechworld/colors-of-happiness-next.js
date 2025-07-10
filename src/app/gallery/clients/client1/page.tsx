@@ -99,19 +99,17 @@ export default function Client1Gallery() {
                         ullamco
                     </p>
 
-                    {/* Full size image-1 start min-h-[400px] md:min-h-[500px] lg:min-h-[600px] */}
-                    <div className="relative h-auto ">
-                        <div className="min-h-[75vh] md:min-h-[100vh] lg:min-h-[150vh] p-2 md:p-3 lg:p-5 overflow-hidden">
-                            <div className="w-full h-full p-5 bg-gray-200 border-4 flex items-center justify-center relative">
-                                <Image
-                                    src={getImagePath(1)}
-                                    alt="Image 1"
-                                    fill
-                                    style={{ objectFit: "cover" }}
-                                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 100vw"
-                                    priority
-                                />
-                            </div>
+                    {/* Image-1 [full size] */}
+                    <div className="h-[75vh] md:h-[100vh] lg:h-[150vh] p-2 md:p-3 lg:p-5 overflow-hidden">
+                        <div className="w-full h-full p-5 bg-gray-200 border-4 flex items-center justify-center relative">
+                            <Image
+                                src={getImagePath(1)}
+                                alt="Image 1"
+                                fill
+                                style={{ objectFit: "cover" }}
+                                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 100vw"
+                                priority
+                            />
                         </div>
                     </div>
                     {/* Full size image-1 end */}
@@ -120,7 +118,7 @@ export default function Client1Gallery() {
                     <div className="grid grid-cols-2 gap-2">
                         {/* Image-2-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                                 <Image
                                     src={getImagePath(2)}
                                     alt="Image 2"
@@ -134,7 +132,7 @@ export default function Client1Gallery() {
 
                         {/* Image-3-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                                 <Image
                                     src={getImagePath(3)}
                                     alt="Image 3"
@@ -149,8 +147,8 @@ export default function Client1Gallery() {
                     {/* Side by side-image end */}
 
                     {/* Image-4-start [full size] */}
-                    <div className="max-w-xs md:max-w-xl lg:max-w-3xl h-auto min-h-[400px] md:min-h-[500px] lg:min-h-[600px] mx-auto p-2 md:p-3 lg:p-5 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                    <div className="max-w-xs md:max-w-xl lg:max-w-3xl h-[400px] md:h-[500px] lg:h-[600px] mx-auto p-2 md:p-3 lg:p-5 overflow-hidden">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                             <Image
                                 src={getImagePath(4)}
                                 alt="Image 4"
@@ -163,8 +161,8 @@ export default function Client1Gallery() {
                     {/* Image-4-end */}
 
                     {/* Image-5-start [full size] */}
-                    <div className="h-auto min-h-[400px] md:min-h-[500px] lg:min-h-[600px] p-2 md:p-3 lg:p-5 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                    <div className="h-[400px] md:h-[500px] lg:h-[600px] p-2 md:p-3 lg:p-5 overflow-hidden">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                             <Image
                                 src={getImagePath(5)}
                                 alt="Image 5"
@@ -180,7 +178,7 @@ export default function Client1Gallery() {
                     <div className="grid grid-cols-2 gap-2">
                         {/* Image-6-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                                 <Image
                                     src={getImagePath(6)}
                                     alt="Image 6"
@@ -194,7 +192,7 @@ export default function Client1Gallery() {
 
                         {/* Image-7-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                                 <Image
                                     src={getImagePath(7)}
                                     alt="Image 7"
@@ -209,8 +207,8 @@ export default function Client1Gallery() {
                     {/* Side by side-image end */}
 
                     {/* Image-8-start [full size] */}
-                    <div className="h-auto min-h-[500px] md:min-h-[600px] lg:min-h-[700px] p-2 md:p-3 lg:p-5 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                    <div className="h-[500px] md:h-[600px] lg:h-[700px] p-2 md:p-3 lg:p-5 overflow-hidden">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                             <Image
                                 src={getImagePath(8)}
                                 alt="Image 8"
@@ -226,7 +224,7 @@ export default function Client1Gallery() {
                     <div className="grid grid-cols-2 gap-2">
                         {/* Image-9-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                                 <Image
                                     src={getImagePath(9)}
                                     alt="Image 9"
@@ -240,7 +238,7 @@ export default function Client1Gallery() {
 
                         {/* Image-10-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden p-2 md:p-3 lg:p-5">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                                 <Image
                                     src={getImagePath(10)}
                                     alt="Image 10"
@@ -255,13 +253,14 @@ export default function Client1Gallery() {
                     {/* Side by side-image end */}
 
                     {/* Image-11-start [full size] */}
-                    <div className="h-auto min-h-[400px] md:min-h-[500px] lg:min-h-[600px] p-2 md:p-3 lg:p-5 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                    <div className="h-[400px] md:h-[500px] lg:h-[600px] p-2 md:p-3 lg:p-5 overflow-hidden">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                             <Image
                                 src={getImagePath(11)}
                                 alt="Image 11"
                                 fill
                                 style={{ objectFit: "cover" }}
+                                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 100vw"
                             />
                         </div>
                     </div>
@@ -271,7 +270,7 @@ export default function Client1Gallery() {
                     <div className="grid grid-cols-2 gap-2">
                         {/* Image-12-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden p-2 md:p-3 lg:p-5">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                                 <Image
                                     src={getImagePath(12)}
                                     alt="Image 12"
@@ -285,7 +284,7 @@ export default function Client1Gallery() {
 
                         {/* Image-13-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                                 <Image
                                     src={getImagePath(13)}
                                     alt="Image 13"
@@ -300,8 +299,8 @@ export default function Client1Gallery() {
                     {/* Side by side-image end */}
 
                     {/* Image-14-start [full size] */}
-                    <div className="h-auto min-h-[400px] md:min-h-[500px] lg:min-h-[600px] p-2 md:p-3 lg:p-5 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                    <div className="h-[400px] md:h-[500px] lg:h-[600px] p-2 md:p-3 lg:p-5 overflow-hidden">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                             <Image
                                 src={getImagePath(14)}
                                 alt="Image 14"
@@ -317,7 +316,7 @@ export default function Client1Gallery() {
                     <div className="grid grid-cols-2 gap-2">
                         {/* Image-15-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                                 <Image
                                     src={getImagePath(15)}
                                     alt="Image 15"
@@ -331,7 +330,7 @@ export default function Client1Gallery() {
 
                         {/* Image-16-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                                 <Image
                                     src={getImagePath(16)}
                                     alt="Image 16"
@@ -345,8 +344,8 @@ export default function Client1Gallery() {
                     {/* Image-16-end */}
 
                     {/* Image-17-start [full size] */}
-                    <div className="h-auto min-h-[500px] md:min-h-[600px] lg:min-h-[700px] p-2 md:p-3 lg:p-5 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                    <div className="h-[500px] md:h-[600px] lg:h-[700px] p-2 md:p-3 lg:p-5 overflow-hidden">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                             <Image
                                 src={getImagePath(17)}
                                 alt="Image 17"
@@ -359,8 +358,8 @@ export default function Client1Gallery() {
                     {/* Image-17-end */}
 
                     {/* Image-18-start [full size] */}
-                    <div className="max-w-xs md:max-w-xl lg:max-w-3xl h-auto min-h-[400px] md:min-h-[500px] lg:min-h-[600px] mx-auto p-2 md:p-3 lg:p-5 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                    <div className="max-w-xs md:max-w-xl lg:max-w-3xl h-[400px] md:h-[500px] lg:h-[600px] mx-auto p-2 md:p-3 lg:p-5 overflow-hidden">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                             <Image
                                 src={getImagePath(18)}
                                 alt="Image 18"
@@ -376,7 +375,7 @@ export default function Client1Gallery() {
                     <div className="grid grid-cols-2 gap-2">
                         {/* Image-19-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                                 <Image
                                     src={getImagePath(19)}
                                     alt="Image 19"
@@ -390,7 +389,7 @@ export default function Client1Gallery() {
 
                         {/* Image-20-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                                 <Image
                                     src={getImagePath(20)}
                                     alt="Image 20"
@@ -407,7 +406,7 @@ export default function Client1Gallery() {
                     <div className="grid grid-cols-2 gap-2 pt-1">
                         {/* Image-21-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                                 <Image
                                     src={getImagePath(21)}
                                     alt="Image 21"
@@ -421,7 +420,7 @@ export default function Client1Gallery() {
 
                         {/* Image-22-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                                 <Image
                                     src={getImagePath(22)}
                                     alt="Image 22"
@@ -435,8 +434,8 @@ export default function Client1Gallery() {
                     {/* Image-22-end */}
 
                     {/* Image-23-start [full size] */}
-                    <div className="max-w-xs md:max-w-xl lg:max-w-3xl h-auto min-h-[400px] md:min-h-[500px] lg:min-h-[600px] mx-auto p-2 md:p-3 lg:p-5 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                    <div className="max-w-xs md:max-w-xl lg:max-w-3xl h-[400px] md:h-[500px] lg:h-[600px] mx-auto p-2 md:p-3 lg:p-5 overflow-hidden">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                             <Image
                                 src={getImagePath(23)}
                                 alt="Image 23"
@@ -449,8 +448,8 @@ export default function Client1Gallery() {
                     {/* Image-23-end */}
 
                     {/* Image-24-start [full size] */}
-                    <div className="h-auto min-h-[500px] md:min-h-[600px] lg:min-h-[700px] p-2 md:p-3 lg:p-5 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                    <div className="h-[500px] md:h-[600px] lg:h-[700px] p-2 md:p-3 lg:p-5 overflow-hidden">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                             <Image
                                 src={getImagePath(24)}
                                 alt="Image 24"
@@ -463,8 +462,8 @@ export default function Client1Gallery() {
                     {/* Image-24-end */}
 
                     {/* Image-25-start [full size] */}
-                    <div className="h-auto min-h-[400px] md:min-h-[500px] lg:min-h-[600px] p-1 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                    <div className="h-[400px] md:h-[500px] lg:h-[600px] p-1 overflow-hidden">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                             <Image
                                 src={getImagePath(25)}
                                 alt="Image 25"
@@ -477,8 +476,8 @@ export default function Client1Gallery() {
                     {/* Image-25-end */}
 
                     {/* Image-26-start [full size] */}
-                    <div className="h-auto min-h-[400px] md:min-h-[500px] lg:min-h-[600px] p-1 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                    <div className="h-[400px] md:h-[500px] lg:h-[600px] p-1 overflow-hidden">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                             <Image
                                 src={getImagePath(26)}
                                 alt="Image 26"
@@ -491,8 +490,8 @@ export default function Client1Gallery() {
                     {/* Image-26-end */}
 
                     {/* Image-27-start [full size] */}
-                    <div className="h-auto min-h-[400px] md:min-h-[500px] lg:min-h-[600px] p-1 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                    <div className="h-[400px] md:h-[500px] lg:h-[600px] p-1 overflow-hidden">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                             <Image
                                 src={getImagePath(27)}
                                 alt="Image 27"
@@ -505,8 +504,8 @@ export default function Client1Gallery() {
                     {/* Image-27-end */}
 
                     {/* Image-28-start [full size] */}
-                    <div className="h-auto min-h-[400px] md:min-h-[500px] lg:min-h-[600px] p-1 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                    <div className="h-[400px] md:h-[500px] lg:h-[600px] p-1 overflow-hidden">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                             <Image
                                 src={getImagePath(28)}
                                 alt="Image 28"
@@ -522,7 +521,7 @@ export default function Client1Gallery() {
                     <div className="grid grid-cols-2 gap-2 pt-1">
                         {/* Image-29-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                                 <Image
                                     src={getImagePath(29)}
                                     alt="Image 29"
@@ -536,7 +535,7 @@ export default function Client1Gallery() {
 
                         {/* Image-30-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                                 <Image
                                     src={getImagePath(30)}
                                     alt="Image 30"
@@ -550,8 +549,8 @@ export default function Client1Gallery() {
                     {/* Image-30-end */}
 
                     {/* Image-31-start [full size] */}
-                    <div className="h-auto min-h-[500px] md:min-h-[600px] lg:min-h-[700px] p-2 md:p-3 lg:p-5 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center relative">
+                    <div className="h-[500px] md:h-[600px] lg:h-[700px] p-2 md:p-3 lg:p-5 overflow-hidden">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center relative">
                             <Image
                                 src={getImagePath(31)}
                                 alt="Image 31"

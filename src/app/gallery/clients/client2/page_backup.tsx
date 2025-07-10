@@ -41,7 +41,7 @@ export default function Client1Gallery() {
 
                     {/* Full size image-1 start */}
                     <div className="w-full min-h-[400px] md:min-h-[500px] lg:min-h-[600px] p-2 md:p-3 lg:p-5 overflow-hidden">
-                        <div className="w-full h-full p-5 bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                        <div className="w-full h-full p-5 bg-gray-200 flex items-center justify-center">
                             <div className="text-center text-gray-600">
                                 <p className="text-lg font-semibold">Image 1</p>
                                 <p className="text-sm">
@@ -57,7 +57,7 @@ export default function Client1Gallery() {
                     <div className="grid grid-cols-2 gap-2">
                         {/* Image-2-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                                 <div className="text-center text-gray-600 p-4">
                                     <p className="text-lg font-semibold">
                                         Image 2
@@ -72,7 +72,7 @@ export default function Client1Gallery() {
 
                         {/* Image-3-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                                 <div className="text-center text-gray-600 p-4">
                                     <p className="text-lg font-semibold">
                                         Image 3
@@ -89,7 +89,7 @@ export default function Client1Gallery() {
 
                     {/* Image-4-start [full size] */}
                     <div className="max-w-xs md:max-w-xl lg:max-w-3xl h-auto min-h-[400px] md:min-h-[500px] lg:min-h-[600px] mx-auto p-2 md:p-3 lg:p-5 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                             <div className="text-center text-gray-600 p-4">
                                 <p className="text-lg font-semibold">Image 4</p>
                                 <p className="text-sm">
@@ -102,7 +102,7 @@ export default function Client1Gallery() {
 
                     {/* Image-5-start [full size] */}
                     <div className="h-auto min-h-[400px] md:min-h-[500px] lg:min-h-[600px] p-2 md:p-3 lg:p-5 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                             <div className="text-center text-gray-600 p-4">
                                 <p className="text-lg font-semibold">Image 5</p>
                                 <p className="text-sm">
@@ -117,7 +117,7 @@ export default function Client1Gallery() {
                     <div className="grid grid-cols-2 gap-2">
                         {/* Image-6-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                                 <div className="text-center text-gray-600 p-4">
                                     <p className="text-lg font-semibold">
                                         Image 6
@@ -132,7 +132,7 @@ export default function Client1Gallery() {
 
                         {/* Image-7-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                                 <div className="text-center text-gray-600 p-4">
                                     <p className="text-lg font-semibold">
                                         Image 7
@@ -149,7 +149,7 @@ export default function Client1Gallery() {
 
                     {/* Image-8-start [full size] */}
                     <div className="h-auto min-h-[500px] md:min-h-[600px] lg:min-h-[700px] p-2 md:p-3 lg:p-5 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                             <div className="text-center text-gray-600 p-4">
                                 <p className="text-lg font-semibold">Image 8</p>
                                 <p className="text-sm">
@@ -164,7 +164,7 @@ export default function Client1Gallery() {
                     <div className="grid grid-cols-2 gap-2">
                         {/* Image-9-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                                 <div className="text-center text-gray-600 p-4">
                                     <p className="text-lg font-semibold">
                                         Image 9
@@ -179,7 +179,7 @@ export default function Client1Gallery() {
 
                         {/* Image-10-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden p-2 md:p-3 lg:p-5">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                                 <div className="text-center text-gray-600 p-4">
                                     <p className="text-lg font-semibold">
                                         Image 10
@@ -196,7 +196,7 @@ export default function Client1Gallery() {
 
                     {/* Image-11-start [full size] */}
                     <div className="h-auto min-h-[400px] md:min-h-[500px] lg:min-h-[600px] p-2 md:p-3 lg:p-5 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                             <div className="text-center text-gray-600 p-4">
                                 <p className="text-lg font-semibold">
                                     Image 11
@@ -213,7 +213,7 @@ export default function Client1Gallery() {
                     <div className="grid grid-cols-2 gap-2">
                         {/* Image-12-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden p-2 md:p-3 lg:p-5">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                                 <div className="text-center text-gray-600 p-4">
                                     <p className="text-lg font-semibold">
                                         Image 12
@@ -228,7 +228,7 @@ export default function Client1Gallery() {
 
                         {/* Image-13-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                                 <div className="text-center text-gray-600 p-4">
                                     <p className="text-lg font-semibold">
                                         Image 13
@@ -245,7 +245,7 @@ export default function Client1Gallery() {
 
                     {/* Image-14-start [full size] */}
                     <div className="h-auto min-h-[400px] md:min-h-[500px] lg:min-h-[600px] p-2 md:p-3 lg:p-5 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                             <div className="text-center text-gray-600 p-4">
                                 <p className="text-lg font-semibold">
                                     Image 14
@@ -262,7 +262,7 @@ export default function Client1Gallery() {
                     <div className="grid grid-cols-2 gap-2">
                         {/* Image-15-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                                 <div className="text-center text-gray-600 p-4">
                                     <p className="text-lg font-semibold">
                                         Image 15
@@ -277,7 +277,7 @@ export default function Client1Gallery() {
 
                         {/* Image-16-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                                 <div className="text-center text-gray-600 p-4">
                                     <p className="text-lg font-semibold">
                                         Image 16
@@ -293,7 +293,7 @@ export default function Client1Gallery() {
 
                     {/* Image-17-start [full size] */}
                     <div className="h-auto min-h-[500px] md:min-h-[600px] lg:min-h-[700px] p-2 md:p-3 lg:p-5 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                             <div className="text-center text-gray-600 p-4">
                                 <p className="text-lg font-semibold">
                                     Image 17
@@ -308,7 +308,7 @@ export default function Client1Gallery() {
 
                     {/* Image-18-start [full size] */}
                     <div className="max-w-xs md:max-w-xl lg:max-w-3xl h-auto min-h-[400px] md:min-h-[500px] lg:min-h-[600px] mx-auto p-2 md:p-3 lg:p-5 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                             <div className="text-center text-gray-600 p-4">
                                 <p className="text-lg font-semibold">
                                     Image 18
@@ -325,7 +325,7 @@ export default function Client1Gallery() {
                     <div className="grid grid-cols-2 gap-2">
                         {/* Image-19-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                                 <div className="text-center text-gray-600 p-4">
                                     <p className="text-lg font-semibold">
                                         Image 19
@@ -340,7 +340,7 @@ export default function Client1Gallery() {
 
                         {/* Image-20-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                                 <div className="text-center text-gray-600 p-4">
                                     <p className="text-lg font-semibold">
                                         Image 20
@@ -358,7 +358,7 @@ export default function Client1Gallery() {
                     <div className="grid grid-cols-2 gap-2 pt-1">
                         {/* Image-21-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                                 <div className="text-center text-gray-600 p-4">
                                     <p className="text-lg font-semibold">
                                         Image 21
@@ -373,7 +373,7 @@ export default function Client1Gallery() {
 
                         {/* Image-22-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                                 <div className="text-center text-gray-600 p-4">
                                     <p className="text-lg font-semibold">
                                         Image 22
@@ -389,7 +389,7 @@ export default function Client1Gallery() {
 
                     {/* Image-23-start [full size] */}
                     <div className="max-w-xs md:max-w-xl lg:max-w-3xl h-auto min-h-[400px] md:min-h-[500px] lg:min-h-[600px] mx-auto p-2 md:p-3 lg:p-5 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                             <div className="text-center text-gray-600 p-4">
                                 <p className="text-lg font-semibold">
                                     Image 23
@@ -404,7 +404,7 @@ export default function Client1Gallery() {
 
                     {/* Image-24-start [full size] */}
                     <div className="h-auto min-h-[500px] md:min-h-[600px] lg:min-h-[700px] p-2 md:p-3 lg:p-5 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                             <div className="text-center text-gray-600 p-4">
                                 <p className="text-lg font-semibold">
                                     Image 24
@@ -419,7 +419,7 @@ export default function Client1Gallery() {
 
                     {/* Image-25-start [full size] */}
                     <div className="h-auto min-h-[400px] md:min-h-[500px] lg:min-h-[600px] p-1 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                             <div className="text-center text-gray-600 p-4">
                                 <p className="text-lg font-semibold">
                                     Image 25
@@ -434,7 +434,7 @@ export default function Client1Gallery() {
 
                     {/* Image-26-start [full size] */}
                     <div className="h-auto min-h-[400px] md:min-h-[500px] lg:min-h-[600px] p-1 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                             <div className="text-center text-gray-600 p-4">
                                 <p className="text-lg font-semibold">
                                     Image 26
@@ -449,7 +449,7 @@ export default function Client1Gallery() {
 
                     {/* Image-27-start [full size] */}
                     <div className="h-auto min-h-[400px] md:min-h-[500px] lg:min-h-[600px] p-1 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                             <div className="text-center text-gray-600 p-4">
                                 <p className="text-lg font-semibold">
                                     Image 27
@@ -464,7 +464,7 @@ export default function Client1Gallery() {
 
                     {/* Image-28-start [full size] */}
                     <div className="h-auto min-h-[400px] md:min-h-[500px] lg:min-h-[600px] p-1 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                             <div className="text-center text-gray-600 p-4">
                                 <p className="text-lg font-semibold">
                                     Image 28
@@ -481,7 +481,7 @@ export default function Client1Gallery() {
                     <div className="grid grid-cols-2 gap-2 pt-1">
                         {/* Image-29-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                                 <div className="text-center text-gray-600 p-4">
                                     <p className="text-lg font-semibold">
                                         Image 29
@@ -496,7 +496,7 @@ export default function Client1Gallery() {
 
                         {/* Image-30-start */}
                         <div className="h-72 md:h-96 lg:h-screen overflow-hidden">
-                            <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                            <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                                 <div className="text-center text-gray-600 p-4">
                                     <p className="text-lg font-semibold">
                                         Image 30
@@ -512,7 +512,7 @@ export default function Client1Gallery() {
 
                     {/* Image-31-start [full size] */}
                     <div className="h-auto min-h-[500px] md:min-h-[600px] lg:min-h-[700px] p-2 md:p-3 lg:p-5 overflow-hidden">
-                        <div className="w-full h-full bg-gray-200 border-4 border-red-500 flex items-center justify-center">
+                        <div className="w-full h-full bg-gray-200 flex items-center justify-center">
                             <div className="text-center text-gray-600 p-4">
                                 <p className="text-lg font-semibold">
                                     Image 31

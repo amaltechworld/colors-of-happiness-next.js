@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Hero = () => {
@@ -45,12 +46,12 @@ const Hero = () => {
                         your love, joy, and celebration, beautifully and
                         authentically.
                     </p>
-                    <a
-                        href="#contact"
+                    <Link
+                        href="/contact"
                         className="mb-8 inline-block bg-black text-white px-8 py-3 rounded-full font-semibold transition hover:bg-gray-800"
                     >
                         BOOK NOW
-                    </a>
+                    </Link>
                     <div className="flex gap-4">
                         <a
                             href="https://facebook.com"
