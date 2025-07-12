@@ -21,15 +21,15 @@ const Hero = () => {
                     alt="Colors Of Happiness Wedding Photography Logo"
                     width={80}
                     height={40}
-                    className="object-contain w-16 h-8 sm:w-20 sm:h-10 md:w-20 md:h-10 "
+                    className="object-contain w-14 h-7 sm:w-16 sm:h-8 md:w-20 md:h-10"
                     priority
                 />
             </div>
 
-            <div className="container mx-auto flex flex-col md:flex-row items-center justify-center px-4">
+            <div className="container mx-auto flex flex-col md:flex-row items-center justify-center px-4 pt-16 md:pt-0">
                 {/* Left: Image */}
                 <div className="md:w-1/2 w-full flex justify-center mb-8 md:mb-0">
-                    <div className="relative w-[340px] h-[480px] md:w-[600px] lg:w-[700px] md:h-[100vh]">
+                    <div className="relative w-[340px] h-[420px] md:w-[450px] md:h-[600px] lg:w-[700px] lg:h-[100vh]">
                         <Image
                             src="/hero/hero-couple.jpg"
                             alt="Couple"

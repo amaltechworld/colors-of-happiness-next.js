@@ -35,16 +35,17 @@ export default function GalleryPage() {
 
     return (
         <main className="bg-white min-h-screen !scroll-smooth scrollbar-thumb-gray-600 scrollbar-track-gray-300 pt-20">
+            
             {/* Logo at Top Left */}
             <div className="absolute top-4 left-4 z-30">
-                <Link href="/">
+                <Link href="/" aria-label="Go to Colors Of Happiness homepage">
                     <Image
                         src="/hero/COH-logo.png"
                         alt="Colors Of Happiness Wedding Photography Logo"
                         width={80}
                         height={40}
-                        className="object-contain w-16 h-8 sm:w-20 sm:h-10 md:w-20 md:h-10"
-                        style={{ width: "auto", height: "auto" }}
+                        className="object-contain w-14 h-7 sm:w-16 sm:h-8 md:w-20 md:h-10"
+                        priority
                     />
                 </Link>
             </div>

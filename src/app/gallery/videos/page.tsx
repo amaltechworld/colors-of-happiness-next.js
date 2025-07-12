@@ -23,18 +23,22 @@ const VideoGallery = () => {
         {
             id: "client1",
             names: "Arjun & Priya",
+            cover: "/gallery/client1-cover.jpg",
         },
         {
             id: "client2",
             names: "Vikram & Anjali",
+            cover: "/gallery/client2-cover.jpg",
         },
         {
             id: "client3",
             names: "Amal & Meera",
+            cover: "/gallery/client3-cover.jpg",
         },
         {
             id: "client4",
             names: "Rohan & Kavya",
+            cover: "/gallery/client4-cover.jpg",
         },
     ];
 
@@ -48,7 +52,7 @@ const VideoGallery = () => {
                         alt="Colors Of Happiness Wedding Photography Logo"
                         width={80}
                         height={40}
-                        className="object-contain w-16 h-8 sm:w-20 sm:h-10 md:w-20 md:h-10"
+                        className="object-contain w-14 h-7 sm:w-16 sm:h-8 md:w-20 md:h-10"
                         priority
                     />
                 </Link>
@@ -74,24 +78,39 @@ const VideoGallery = () => {
                                 href={`/gallery/videos/${client.id}`}
                                 className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                             >
-                                <div className="aspect-video bg-gray-200 flex items-center justify-center">
-                                    <div className="text-center">
-                                        <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-                                            {client.names}
-                                        </h3>
-                                        <p className="text-gray-600">
-                                            Wedding Video Collection
-                                        </p>
+                                <div className="aspect-video relative">
+                                    <Image
+                                        src={client.cover}
+                                        alt={`${client.names} Wedding Video Cover`}
+                                        fill
+                                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 50vw"
+                                    />
+
+                                    {/* Video Play Icon Overlay */}
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <div className="bg-black/50 rounded-full p-4 group-hover:bg-black/70 transition-all duration-300">
+                                            <svg
+                                                className="w-8 h-8 text-white"
+                                                fill="currentColor"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path d="M8 5v14l11-7z" />
+                                            </svg>
+                                        </div>
                                     </div>
                                 </div>
 
                                 {/* Hover overlay */}
-                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300" />
+                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300" />
 
                                 {/* Bottom text overlay */}
-                                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
-                                    <p className="text-white text-lg font-medium">
-                                        View {client.names} Videos
+                                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                                    <h3 className="text-white text-xl font-semibold mb-1">
+                                        {client.names}
+                                    </h3>
+                                    <p className="text-white/90 text-sm">
+                                        Wedding Video Collection
                                     </p>
                                 </div>
                             </Link>
