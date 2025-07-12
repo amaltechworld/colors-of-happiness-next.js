@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 
 const topImages = [
@@ -18,18 +18,10 @@ const bottomImages = [
 ];
 
 const Photos = () => {
-    const [touchedImages, setTouchedImages] = useState<Set<string>>(new Set());
+    const [activeImage, setActiveImage] = useState<string | null>(null);
 
-    const handleTouch = (imageSrc: string) => {
-        setTouchedImages((prev) => {
-            const newSet = new Set(prev);
-            if (newSet.has(imageSrc)) {
-                newSet.delete(imageSrc);
-            } else {
-                newSet.add(imageSrc);
-            }
-            return newSet;
-        });
+    const handleImageInteraction = (imageSrc: string) => {
+        setActiveImage(prev => prev === imageSrc ? null : imageSrc);
     };
 
     return (
@@ -40,15 +32,16 @@ const Photos = () => {
                     <div
                         key={img.src}
                         className="relative aspect-[4/3] w-full overflow-hidden rounded-lg cursor-pointer"
-                        onClick={() => handleTouch(img.src)}
-                        onTouchStart={() => handleTouch(img.src)}
+                        onClick={() => handleImageInteraction(img.src)}
+                        onTouchStart={() => handleImageInteraction(img.src)}
                     >
                         <Image
                             src={img.src}
                             alt={img.alt}
                             fill
-                            className={`object-cover object-center rounded-lg transition duration-500 ease-in-out ${
-                                touchedImages.has(img.src)
+                            sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, 15vw"
+                            className={`object-cover object-center rounded-lg transition-all duration-500 ease-in-out ${
+                                activeImage === img.src
                                     ? "filter-none"
                                     : "filter grayscale hover:filter-none"
                             }`}
@@ -72,15 +65,16 @@ const Photos = () => {
                     <div
                         key={img.src}
                         className="relative aspect-[4/3] w-full overflow-hidden rounded-lg cursor-pointer"
-                        onClick={() => handleTouch(img.src)}
-                        onTouchStart={() => handleTouch(img.src)}
+                        onClick={() => handleImageInteraction(img.src)}
+                        onTouchStart={() => handleImageInteraction(img.src)}
                     >
                         <Image
                             src={img.src}
                             alt={img.alt}
                             fill
-                            className={`object-cover object-center rounded-lg transition duration-500 ease-in-out ${
-                                touchedImages.has(img.src)
+                            sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, 15vw"
+                            className={`object-cover object-center rounded-lg transition-all duration-500 ease-in-out ${
+                                activeImage === img.src
                                     ? "filter-none"
                                     : "filter grayscale hover:filter-none"
                             }`}

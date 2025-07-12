@@ -17,6 +17,7 @@ const ImageVideo = () => {
                         src="/imageVideo/image.jpg"
                         alt="Image Gallery"
                         fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
                         className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
                         priority
                     />
@@ -42,6 +43,7 @@ const ImageVideo = () => {
                         src="/imageVideo/video.jpg"
                         alt="Video Gallery"
                         fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
                         className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
                         priority
                     />

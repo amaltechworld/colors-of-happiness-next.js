@@ -29,11 +29,12 @@ const Hero = () => {
             <div className="container mx-auto flex flex-col md:flex-row items-center justify-center px-4 pt-16 md:pt-0">
                 {/* Left: Image */}
                 <div className="md:w-1/2 w-full flex justify-center mb-8 md:mb-0">
-                    <div className="relative w-[340px] h-[420px] md:w-[450px] md:h-[600px] lg:w-[700px] lg:h-[100vh]">
+                    <div className="relative w-[340px] h-[420px] md:w-[450px] md:h-[550px] lg:w-[700px] lg:h-[100vh]">
                         <Image
                             src="/hero/hero-couple.jpg"
                             alt="Couple"
                             fill
+                            sizes="(max-width: 768px) 340px, (max-width: 1024px) 450px, 700px"
                             className="object-contain md:object-bottom"
                             priority
                         />
