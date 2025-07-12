@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 
 const topImages = [
@@ -16,52 +18,78 @@ const bottomImages = [
 ];
 
 const Photos = () => {
-  return (
-      <section className="bg-white h-auto lg:h-screen lg:snap-start flex flex-col justify-between">
-          {/* Top Images */}
-          <div className="grid grid-cols-4 gap-4 p-1">
-              {topImages.map((img) => (
-                  <div
-                      key={img.src}
-                      className="relative aspect-[4/3] w-full overflow-hidden rounded-lg"
-                  >
-                      <Image
-                          src={img.src}
-                          alt={img.alt}
-                          fill
-                          className="object-cover object-center rounded-lg transition duration-500 ease-in-out filter grayscale hover:filter-none"
-                      />
-                  </div>
-              ))}
-          </div>
+    const [touchedImages, setTouchedImages] = useState<Set<string>>(new Set());
 
-          {/* Blockquote */}
-          <blockquote className="sm:text-2xl md:text-3xl py-4 m-0 italic font-light text-center text-[#561C24]">
-              <p className="split-1 leading-normal">
-                  Colors are the sparks <br />
-                  that <br />
-                  ignite creativity
-              </p>
-          </blockquote>
+    const handleTouch = (imageSrc: string) => {
+        setTouchedImages((prev) => {
+            const newSet = new Set(prev);
+            if (newSet.has(imageSrc)) {
+                newSet.delete(imageSrc);
+            } else {
+                newSet.add(imageSrc);
+            }
+            return newSet;
+        });
+    };
 
-          {/* Bottom Images */}
-          <div className="grid grid-cols-4 gap-4 p-1">
-              {bottomImages.map((img) => (
-                  <div
-                      key={img.src}
-                      className="relative aspect-[4/3] w-full overflow-hidden rounded-lg"
-                  >
-                      <Image
-                          src={img.src}
-                          alt={img.alt}
-                          fill
-                          className="object-cover object-center rounded-lg transition duration-500 ease-in-out filter grayscale hover:filter-none"
-                      />
-                  </div>
-              ))}
-          </div>
-      </section>
-  );
+    return (
+        <section className="bg-white h-auto lg:h-screen lg:snap-start flex flex-col justify-between">
+            {/* Top Images */}
+            <div className="grid grid-cols-4 gap-4 p-1">
+                {topImages.map((img) => (
+                    <div
+                        key={img.src}
+                        className="relative aspect-[4/3] w-full overflow-hidden rounded-lg cursor-pointer"
+                        onClick={() => handleTouch(img.src)}
+                        onTouchStart={() => handleTouch(img.src)}
+                    >
+                        <Image
+                            src={img.src}
+                            alt={img.alt}
+                            fill
+                            className={`object-cover object-center rounded-lg transition duration-500 ease-in-out ${
+                                touchedImages.has(img.src)
+                                    ? "filter-none"
+                                    : "filter grayscale hover:filter-none"
+                            }`}
+                        />
+                    </div>
+                ))}
+            </div>
+
+            {/* Blockquote */}
+            <blockquote className="sm:text-2xl md:text-3xl py-4 m-0 italic font-light text-center text-[#561C24]">
+                <p className="split-1 leading-normal">
+                    Colors are the sparks <br />
+                    that <br />
+                    ignite creativity
+                </p>
+            </blockquote>
+
+            {/* Bottom Images */}
+            <div className="grid grid-cols-4 gap-4 p-1">
+                {bottomImages.map((img) => (
+                    <div
+                        key={img.src}
+                        className="relative aspect-[4/3] w-full overflow-hidden rounded-lg cursor-pointer"
+                        onClick={() => handleTouch(img.src)}
+                        onTouchStart={() => handleTouch(img.src)}
+                    >
+                        <Image
+                            src={img.src}
+                            alt={img.alt}
+                            fill
+                            className={`object-cover object-center rounded-lg transition duration-500 ease-in-out ${
+                                touchedImages.has(img.src)
+                                    ? "filter-none"
+                                    : "filter grayscale hover:filter-none"
+                            }`}
+                        />
+                    </div>
+                ))}
+            </div>
+        </section>
+    );
 };
 
 export default Photos;

@@ -10,7 +10,6 @@ export default function ContactPage() {
         name: "",
         email: "",
         phone: "",
-        guestCount: "",
         details: "",
         location: "",
         dates: "",
@@ -59,7 +58,6 @@ export default function ContactPage() {
                 name: "",
                 email: "",
                 phone: "",
-                guestCount: "",
                 details: "",
                 location: "",
                 dates: "",
@@ -104,7 +102,7 @@ export default function ContactPage() {
                         alt="Colors Of Happiness Wedding Photography Logo"
                         width={80}
                         height={40}
-                        className="object-contain"
+                        className="object-contain w-16 h-8 sm:w-20 sm:h-10 md:w-20 md:h-10"
                         style={{ width: "auto", height: "auto" }}
                         priority
                     />
@@ -148,7 +146,7 @@ export default function ContactPage() {
                                         required
                                         value={formData.name}
                                         onChange={handleInputChange}
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 placeholder-gray-400 text-gray-900 bg-white"
                                         placeholder="Your full name"
                                     />
                                 </div>
@@ -167,13 +165,34 @@ export default function ContactPage() {
                                         required
                                         value={formData.email}
                                         onChange={handleInputChange}
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 placeholder-gray-400 text-gray-900 bg-white"
                                         placeholder="your.email@example.com"
                                     />
                                 </div>
                             </div>
 
-                            {/* Row 2: Phone and Guest Count */}
+                            {/* Row 2: Wedding Location */}
+                            <div>
+                                <label
+                                    htmlFor="location"
+                                    className="block text-sm font-medium text-gray-700 mb-2"
+                                >
+                                    Wedding Location{" "}
+                                    <span className="text-red-500">*</span>
+                                </label>{" "}
+                                <input
+                                    type="text"
+                                    id="location"
+                                    name="location"
+                                    required
+                                    value={formData.location}
+                                    onChange={handleInputChange}
+                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 placeholder-gray-400 text-gray-900 bg-white"
+                                    placeholder="City, State or Venue Name - Please provide detailed location information"
+                                />
+                            </div>
+
+                            {/* Row 3: Phone and Date */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label
@@ -190,51 +209,8 @@ export default function ContactPage() {
                                         required
                                         value={formData.phone}
                                         onChange={handleInputChange}
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                                        placeholder="+91 98765 43210"
-                                    />
-                                </div>
-                                <div>
-                                    <label
-                                        htmlFor="guestCount"
-                                        className="block text-sm font-medium text-gray-700 mb-2"
-                                    >
-                                        Estimated Guest Count{" "}
-                                        <span className="text-red-500">*</span>
-                                    </label>
-                                    <input
-                                        type="number"
-                                        id="guestCount"
-                                        name="guestCount"
-                                        required
-                                        value={formData.guestCount}
-                                        onChange={handleInputChange}
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                                        placeholder="150"
-                                        min="1"
-                                    />
-                                </div>
-                            </div>
-
-                            {/* Row 3: Location and Date */}
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label
-                                        htmlFor="location"
-                                        className="block text-sm font-medium text-gray-700 mb-2"
-                                    >
-                                        Wedding Location{" "}
-                                        <span className="text-red-500">*</span>
-                                    </label>
-                                    <input
-                                        type="text"
-                                        id="location"
-                                        name="location"
-                                        required
-                                        value={formData.location}
-                                        onChange={handleInputChange}
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                                        placeholder="City, State or Venue Name"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 placeholder-gray-400 text-gray-900 bg-white"
+                                        placeholder="+00 00000 00000"
                                     />
                                 </div>
                                 <div>
@@ -252,7 +228,7 @@ export default function ContactPage() {
                                         required
                                         value={formData.dates}
                                         onChange={handleInputChange}
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 text-gray-900 bg-white placeholder-gray-400 [&::-webkit-calendar-picker-indicator]:opacity-60 [&::-webkit-calendar-picker-indicator]:hover:opacity-100 [&::-webkit-datetime-edit-text]:text-gray-400 [&::-webkit-datetime-edit-month-field]:text-gray-400 [&::-webkit-datetime-edit-day-field]:text-gray-400 [&::-webkit-datetime-edit-year-field]:text-gray-400"
                                     />
                                 </div>
                             </div>
@@ -306,7 +282,7 @@ export default function ContactPage() {
                                     rows={6}
                                     value={formData.details}
                                     onChange={handleInputChange}
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none"
+                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none placeholder-gray-400 text-gray-900 bg-white"
                                     placeholder="Share details about your wedding - event flow, venues, special moments you want captured, your vision, or any specific requirements..."
                                 />
                             </div>

@@ -72,7 +72,7 @@ export default function Client1Gallery() {
                         alt="Colors Of Happiness Wedding Photography Logo"
                         width={80}
                         height={40}
-                        className="object-contain"
+                        className="object-contain w-16 h-8 sm:w-20 sm:h-10 md:w-20 md:h-10"
                         style={{ width: "auto", height: "auto" }}
                         priority
                     />

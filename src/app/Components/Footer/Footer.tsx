@@ -11,10 +11,10 @@ const Footer = () => {
                 <Link href="/">
                     <Image
                         src="/footer/coh-white-logo.png"
-                        alt="footer-logo of colors of happiness"
-                        className="h-10 lg:h-12 hover:cursor-pointer"
-                        width={96}
-                        height={56}
+                        alt="Colors Of Happiness Wedding Photography Logo"
+                        className="object-contain w-16 h-8 sm:w-20 sm:h-10 md:w-20 md:h-10 hover:cursor-pointer"
+                        width={80}
+                        height={40}
                         style={{ width: "auto", height: "auto" }}
                     />
                 </Link>

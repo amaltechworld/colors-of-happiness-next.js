@@ -1,7 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import {
+    FaFacebookF,
+    FaInstagram,
+    FaYoutube,
+    FaWhatsapp,
+} from "react-icons/fa";
 
 const Hero = () => {
     return (
@@ -12,11 +17,12 @@ const Hero = () => {
             {/* Logo at Top Left */}
             <div className="absolute top-4 left-4 z-30">
                 <Image
-                    src="/hero/COH-logo.png" // Replace with your logo image path
-                    alt="Logo"
+                    src="/hero/COH-logo.png"
+                    alt="Colors Of Happiness Wedding Photography Logo"
                     width={80}
                     height={40}
-                    className="object-contain"
+                    className="object-contain w-16 h-8 sm:w-20 sm:h-10 md:w-20 md:h-10 "
+                    priority
                 />
             </div>
 
@@ -54,37 +60,50 @@ const Hero = () => {
                     </Link>
                     <div className="flex gap-4">
                         <a
-                            href="https://facebook.com"
+                            href="https://www.facebook.com/share/15BUBsv3BG/"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Facebook"
                         >
-                            <span className="bg-gray-100 hover:bg-gray-200 rounded-full p-3 text-xl text-gray-700 transition inline-flex items-center justify-center cusrsor-pointer">
+                            <span className="bg-gray-100 hover:bg-gray-200 rounded-full p-3 text-xl text-gray-700 transition inline-flex items-center justify-center cursor-pointer">
                                 <FaFacebookF />
                             </span>
                         </a>
                         <a
-                            href="https://instagram.com"
+                            href="https://www.instagram.com/colorsofhappiness_coh/?igsh=MXZndjc0dTg2YzUwYQ%3D%3D"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Instagram"
                         >
-                            <span className="bg-gray-100 hover:bg-gray-200 rounded-full p-3 text-xl text-gray-700 transition inline-flex items-center justify-center cusrsor-pointer">
+                            <span className="bg-gray-100 hover:bg-gray-200 rounded-full p-3 text-xl text-gray-700 transition inline-flex items-center justify-center cursor-pointer">
                                 <FaInstagram />
                             </span>
                         </a>
                         <a
-                            href="https://youtube.com"
+                            href="https://www.youtube.com/@colorsofhappiness_coh"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="YouTube"
                         >
-                            <span className="bg-gray-100 hover:bg-gray-200 rounded-full p-3 text-xl text-gray-700 transition inline-flex items-center justify-center cusrsor-pointer">
+                            <span className="bg-gray-100 hover:bg-gray-200 rounded-full p-3 text-xl text-gray-700 transition inline-flex items-center justify-center cursor-pointer">
                                 <FaYoutube />
                             </span>
                         </a>
                     </div>
                 </div>
+            </div>
+
+            {/* WhatsApp Button - Bottom Right */}
+            <div className="absolute bottom-6 right-6 z-30">
+                <a
+                    href="https://wa.me/919745713419"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Contact us on WhatsApp"
+                    className="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 flex items-center justify-center"
+                >
+                    <FaWhatsapp className="text-2xl" />
+                </a>
             </div>
         </section>
     );
