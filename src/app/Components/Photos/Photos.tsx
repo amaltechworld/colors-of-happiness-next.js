@@ -21,7 +21,7 @@ const Photos = () => {
     const [activeImage, setActiveImage] = useState<string | null>(null);
 
     const handleImageInteraction = (imageSrc: string) => {
-        setActiveImage(prev => prev === imageSrc ? null : imageSrc);
+        setActiveImage((prev) => (prev === imageSrc ? null : imageSrc));
     };
 
     const handleTouchStart = (e: React.TouchEvent, imageSrc: string) => {
@@ -39,7 +39,10 @@ const Photos = () => {
                         className="relative aspect-[4/3] w-full overflow-hidden rounded-lg cursor-pointer select-none"
                         onClick={() => handleImageInteraction(img.src)}
                         onTouchStart={(e) => handleTouchStart(e, img.src)}
-                        style={{ WebkitTouchCallout: 'none', WebkitUserSelect: 'none' }}
+                        style={{
+                            WebkitTouchCallout: "none",
+                            WebkitUserSelect: "none",
+                        }}
                     >
                         <Image
                             src={img.src}
@@ -73,7 +76,10 @@ const Photos = () => {
                         className="relative aspect-[4/3] w-full overflow-hidden rounded-lg cursor-pointer select-none"
                         onClick={() => handleImageInteraction(img.src)}
                         onTouchStart={(e) => handleTouchStart(e, img.src)}
-                        style={{ WebkitTouchCallout: 'none', WebkitUserSelect: 'none' }}
+                        style={{
+                            WebkitTouchCallout: "none",
+                            WebkitUserSelect: "none",
+                        }}
                     >
                         <Image
                             src={img.src}
