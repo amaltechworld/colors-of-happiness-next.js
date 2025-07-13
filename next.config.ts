@@ -16,6 +16,22 @@ const nextConfig: NextConfig = {
         // Don't fail the build on TypeScript errors during production
         ignoreBuildErrors: false,
     },
+    // Configure development server
+    ...(process.env.NODE_ENV === "development" && {
+        async headers() {
+            return [
+                {
+                    source: "/:path*",
+                    headers: [
+                        {
+                            key: "Access-Control-Allow-Origin",
+                            value: "*",
+                        },
+                    ],
+                },
+            ];
+        },
+    }),
 };
 
 export default nextConfig;

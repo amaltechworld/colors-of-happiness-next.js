@@ -26,6 +26,7 @@ const Photos = () => {
 
     const handleTouchStart = (e: React.TouchEvent, imageSrc: string) => {
         e.preventDefault(); // Prevent default touch behavior
+        e.stopPropagation(); // Stop event bubbling
         handleImageInteraction(imageSrc);
     };
 
@@ -36,12 +37,13 @@ const Photos = () => {
                 {topImages.map((img) => (
                     <div
                         key={img.src}
-                        className="relative aspect-[4/3] w-full overflow-hidden rounded-lg cursor-pointer select-none"
+                        className="relative aspect-[4/3] w-full overflow-hidden rounded-lg cursor-pointer select-none touch-manipulation"
                         onClick={() => handleImageInteraction(img.src)}
                         onTouchStart={(e) => handleTouchStart(e, img.src)}
                         style={{
                             WebkitTouchCallout: "none",
                             WebkitUserSelect: "none",
+                            WebkitTapHighlightColor: "transparent",
                         }}
                     >
                         <Image
@@ -73,12 +75,13 @@ const Photos = () => {
                 {bottomImages.map((img) => (
                     <div
                         key={img.src}
-                        className="relative aspect-[4/3] w-full overflow-hidden rounded-lg cursor-pointer select-none"
+                        className="relative aspect-[4/3] w-full overflow-hidden rounded-lg cursor-pointer select-none touch-manipulation"
                         onClick={() => handleImageInteraction(img.src)}
                         onTouchStart={(e) => handleTouchStart(e, img.src)}
                         style={{
                             WebkitTouchCallout: "none",
                             WebkitUserSelect: "none",
+                            WebkitTapHighlightColor: "transparent",
                         }}
                     >
                         <Image
