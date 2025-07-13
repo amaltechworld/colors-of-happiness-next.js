@@ -11,7 +11,7 @@ import {
 const Hero = () => {
     return (
         <section
-            className="w-full h-screen flex items-center justify-center bg-white relative"
+            className="w-full h-screen md:h-auto lg:h-screen flex items-center justify-center bg-white relative"
             id="hero"
         >
             {/* Logo at Top Left */}

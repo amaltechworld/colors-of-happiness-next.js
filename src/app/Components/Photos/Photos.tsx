@@ -33,7 +33,7 @@ const Photos = () => {
                         key={img.src}
                         className="relative aspect-[4/3] w-full overflow-hidden rounded-lg cursor-pointer"
                         onClick={() => handleImageInteraction(img.src)}
-                        onTouchStart={() => handleImageInteraction(img.src)}
+                        onTouchEnd={() => handleImageInteraction(img.src)}
                     >
                         <Image
                             src={img.src}
@@ -66,7 +66,7 @@ const Photos = () => {
                         key={img.src}
                         className="relative aspect-[4/3] w-full overflow-hidden rounded-lg cursor-pointer"
                         onClick={() => handleImageInteraction(img.src)}
-                        onTouchStart={() => handleImageInteraction(img.src)}
+                        onTouchEnd={() => handleImageInteraction(img.src)}
                     >
                         <Image
                             src={img.src}
