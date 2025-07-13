@@ -24,6 +24,11 @@ const Photos = () => {
         setActiveImage(prev => prev === imageSrc ? null : imageSrc);
     };
 
+    const handleTouchStart = (e: React.TouchEvent, imageSrc: string) => {
+        e.preventDefault(); // Prevent default touch behavior
+        handleImageInteraction(imageSrc);
+    };
+
     return (
         <section className="bg-white h-auto lg:h-screen lg:snap-start flex flex-col justify-between">
             {/* Top Images */}
@@ -31,9 +36,10 @@ const Photos = () => {
                 {topImages.map((img) => (
                     <div
                         key={img.src}
-                        className="relative aspect-[4/3] w-full overflow-hidden rounded-lg cursor-pointer"
+                        className="relative aspect-[4/3] w-full overflow-hidden rounded-lg cursor-pointer select-none"
                         onClick={() => handleImageInteraction(img.src)}
-                        onTouchEnd={() => handleImageInteraction(img.src)}
+                        onTouchStart={(e) => handleTouchStart(e, img.src)}
+                        style={{ WebkitTouchCallout: 'none', WebkitUserSelect: 'none' }}
                     >
                         <Image
                             src={img.src}
@@ -43,7 +49,7 @@ const Photos = () => {
                             className={`object-cover object-center rounded-lg transition-all duration-500 ease-in-out ${
                                 activeImage === img.src
                                     ? "filter-none"
-                                    : "filter grayscale hover:filter-none"
+                                    : "filter grayscale md:hover:filter-none"
                             }`}
                         />
                     </div>
@@ -64,9 +70,10 @@ const Photos = () => {
                 {bottomImages.map((img) => (
                     <div
                         key={img.src}
-                        className="relative aspect-[4/3] w-full overflow-hidden rounded-lg cursor-pointer"
+                        className="relative aspect-[4/3] w-full overflow-hidden rounded-lg cursor-pointer select-none"
                         onClick={() => handleImageInteraction(img.src)}
-                        onTouchEnd={() => handleImageInteraction(img.src)}
+                        onTouchStart={(e) => handleTouchStart(e, img.src)}
+                        style={{ WebkitTouchCallout: 'none', WebkitUserSelect: 'none' }}
                     >
                         <Image
                             src={img.src}
@@ -76,7 +83,7 @@ const Photos = () => {
                             className={`object-cover object-center rounded-lg transition-all duration-500 ease-in-out ${
                                 activeImage === img.src
                                     ? "filter-none"
-                                    : "filter grayscale hover:filter-none"
+                                    : "filter grayscale md:hover:filter-none"
                             }`}
                         />
                     </div>
