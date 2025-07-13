@@ -24,10 +24,14 @@ const Photos = () => {
         setActiveImage((prev) => (prev === imageSrc ? null : imageSrc));
     };
 
-    const handleTouchStart = (e: React.TouchEvent, imageSrc: string) => {
+    const handleTouchEnd = (e: React.TouchEvent, imageSrc: string) => {
         e.preventDefault(); // Prevent default touch behavior
         e.stopPropagation(); // Stop event bubbling
         handleImageInteraction(imageSrc);
+    };
+
+    const handleTouchStart = (e: React.TouchEvent) => {
+        e.preventDefault(); // Prevent default touch behavior like scrolling
     };
 
     return (
@@ -39,7 +43,8 @@ const Photos = () => {
                         key={img.src}
                         className="relative aspect-[4/3] w-full overflow-hidden rounded-lg cursor-pointer select-none touch-manipulation"
                         onClick={() => handleImageInteraction(img.src)}
-                        onTouchStart={(e) => handleTouchStart(e, img.src)}
+                        onTouchStart={handleTouchStart}
+                        onTouchEnd={(e) => handleTouchEnd(e, img.src)}
                         style={{
                             WebkitTouchCallout: "none",
                             WebkitUserSelect: "none",
@@ -77,7 +82,8 @@ const Photos = () => {
                         key={img.src}
                         className="relative aspect-[4/3] w-full overflow-hidden rounded-lg cursor-pointer select-none touch-manipulation"
                         onClick={() => handleImageInteraction(img.src)}
-                        onTouchStart={(e) => handleTouchStart(e, img.src)}
+                        onTouchStart={handleTouchStart}
+                        onTouchEnd={(e) => handleTouchEnd(e, img.src)}
                         style={{
                             WebkitTouchCallout: "none",
                             WebkitUserSelect: "none",
